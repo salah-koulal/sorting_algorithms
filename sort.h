@@ -18,11 +18,24 @@ typedef struct listint_s
 	struct listint_s *next;
 } listint_t;
 
-void print_list(const listint_t *list);
+/* print_array.c */
 void print_array(const int *array, size_t size);
+
+/* print_list.c */
+void print_list(const listint_t *list);
+
+/* 0-bubble_sort.c */
 void bubble_sort(int *array, size_t size);
+
+/* 1-insertion_sort_list.c */
 void insertion_sort_list(listint_t **list);
-void quick_sort(int *array, size_t size);
+
+/* 2-selection_sort.c */
 void selection_sort(int *array, size_t size);
+
+/* 3-quick_sort.c */
+void quick_sort(int *array, size_t size);
+int lomuto_partition(int *array, int low, int high, int size);
+void quickSort(int *array, int beg, int end, int size);
 
 #endif /* SORT_H */
